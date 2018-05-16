@@ -5,10 +5,31 @@
     xmlns:local="using:DataListWithWCF_EF"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:data ="using:DataListWithWCF_EF.AdvWorksServiceReference"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" 
+    Loaded="Page_Loaded">
     <Grid>
-
+        <ListView ItemsSource="{x:Bind Items}" >
+            <ListView.ItemTemplate>
+                <DataTemplate x:DataType="data:Customer">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="{Binding CustomerID}"/>
+                        <TextBlock Grid.Column="1"
+                                   Text="{Binding Person}"/>
+                        <TextBlock Grid.Column="2"
+                                   Text="{Binding SalesTerritory}"/>
+                    </Grid>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </Grid>
 </Page>

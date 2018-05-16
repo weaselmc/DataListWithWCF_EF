@@ -11,7 +11,7 @@
     <AssemblyName>DataListWithWCF_EF</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
-    <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.15063.0</TargetPlatformVersion>
+    <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.14393.0</TargetPlatformVersion>
     <TargetPlatformMinVersion>10.0.10586.0</TargetPlatformMinVersion>
     <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
     <FileAlignment>512</FileAlignment>
@@ -95,6 +95,11 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Connected Services\AdvWorksServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -104,9 +109,33 @@
     <AppxManifest Include="Package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
+    <None Include="Connected Services\AdvWorksServiceReference\AdvWorksDataService.wsdl" />
+    <None Include="Connected Services\AdvWorksServiceReference\AdvWorksDataService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\AdvWorksServiceReference\AdvWorksDataService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\AdvWorksServiceReference\AdvWorksDataService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\AdvWorksServiceReference\AdvWorksDataService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\AdvWorksServiceReference\DataListWithWCF_EF.AdvWorksServiceReference.Customer.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="DataListWithWCF_EF_TemporaryKey.pfx" />
+    <None Include="Properties\ServiceReferences.Designer.ClientConfig" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Connected Services\AdvWorksServiceReference\AdvWorksDataService.disco" />
+    <None Include="Connected Services\AdvWorksServiceReference\configuration91.svcinfo" />
+    <None Include="Connected Services\AdvWorksServiceReference\configuration.svcinfo" />
+    <None Include="Connected Services\AdvWorksServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -130,6 +159,12 @@
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
       <Version>6.1.4</Version>
     </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\AdvWorksServiceReference\" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

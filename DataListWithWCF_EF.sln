@@ -4,17 +4,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.27703.2000
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataListWithWCF_EF", "DataListWithWCF_EF\DataListWithWCF_EF.csproj", "{ECB4C2FC-2DAA-4AB4-9FA8-1987985CBFDD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{34669165-815A-441B-96EC-01B57BA6BCAD} = {34669165-815A-441B-96EC-01B57BA6BCAD}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdvWorksDataService", "AdvWorksDataService\AdvWorksDataService.csproj", "{34669165-815A-441B-96EC-01B57BA6BCAD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
 		Debug|ARM = Debug|ARM
 		Debug|x64 = Debug|x64
 		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
 		Release|ARM = Release|ARM
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ECB4C2FC-2DAA-4AB4-9FA8-1987985CBFDD}.Debug|Any CPU.ActiveCfg = Debug|x86
 		{ECB4C2FC-2DAA-4AB4-9FA8-1987985CBFDD}.Debug|ARM.ActiveCfg = Debug|ARM
 		{ECB4C2FC-2DAA-4AB4-9FA8-1987985CBFDD}.Debug|ARM.Build.0 = Debug|ARM
 		{ECB4C2FC-2DAA-4AB4-9FA8-1987985CBFDD}.Debug|ARM.Deploy.0 = Debug|ARM
@@ -24,6 +32,7 @@ Global
 		{ECB4C2FC-2DAA-4AB4-9FA8-1987985CBFDD}.Debug|x86.ActiveCfg = Debug|x86
 		{ECB4C2FC-2DAA-4AB4-9FA8-1987985CBFDD}.Debug|x86.Build.0 = Debug|x86
 		{ECB4C2FC-2DAA-4AB4-9FA8-1987985CBFDD}.Debug|x86.Deploy.0 = Debug|x86
+		{ECB4C2FC-2DAA-4AB4-9FA8-1987985CBFDD}.Release|Any CPU.ActiveCfg = Release|x86
 		{ECB4C2FC-2DAA-4AB4-9FA8-1987985CBFDD}.Release|ARM.ActiveCfg = Release|ARM
 		{ECB4C2FC-2DAA-4AB4-9FA8-1987985CBFDD}.Release|ARM.Build.0 = Release|ARM
 		{ECB4C2FC-2DAA-4AB4-9FA8-1987985CBFDD}.Release|ARM.Deploy.0 = Release|ARM
@@ -33,6 +42,22 @@ Global
 		{ECB4C2FC-2DAA-4AB4-9FA8-1987985CBFDD}.Release|x86.ActiveCfg = Release|x86
 		{ECB4C2FC-2DAA-4AB4-9FA8-1987985CBFDD}.Release|x86.Build.0 = Release|x86
 		{ECB4C2FC-2DAA-4AB4-9FA8-1987985CBFDD}.Release|x86.Deploy.0 = Release|x86
+		{34669165-815A-441B-96EC-01B57BA6BCAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34669165-815A-441B-96EC-01B57BA6BCAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34669165-815A-441B-96EC-01B57BA6BCAD}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{34669165-815A-441B-96EC-01B57BA6BCAD}.Debug|ARM.Build.0 = Debug|Any CPU
+		{34669165-815A-441B-96EC-01B57BA6BCAD}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{34669165-815A-441B-96EC-01B57BA6BCAD}.Debug|x64.Build.0 = Debug|Any CPU
+		{34669165-815A-441B-96EC-01B57BA6BCAD}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{34669165-815A-441B-96EC-01B57BA6BCAD}.Debug|x86.Build.0 = Debug|Any CPU
+		{34669165-815A-441B-96EC-01B57BA6BCAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34669165-815A-441B-96EC-01B57BA6BCAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34669165-815A-441B-96EC-01B57BA6BCAD}.Release|ARM.ActiveCfg = Release|Any CPU
+		{34669165-815A-441B-96EC-01B57BA6BCAD}.Release|ARM.Build.0 = Release|Any CPU
+		{34669165-815A-441B-96EC-01B57BA6BCAD}.Release|x64.ActiveCfg = Release|Any CPU
+		{34669165-815A-441B-96EC-01B57BA6BCAD}.Release|x64.Build.0 = Release|Any CPU
+		{34669165-815A-441B-96EC-01B57BA6BCAD}.Release|x86.ActiveCfg = Release|Any CPU
+		{34669165-815A-441B-96EC-01B57BA6BCAD}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
